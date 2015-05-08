@@ -34,7 +34,6 @@ Class  EE_Rest_Api_Client extends EE_Addon {
 				'main_file_path' 				=> EE_REST_API_CLIENT_PLUGIN_FILE,
 				'autoloader_paths' => array(
 					'EE_Rest_Api_Client' 						=> EE_REST_API_CLIENT_PATH . 'EE_Rest_Api_Client.class.php',
-					'EE_Rest_Api_Client_Config' 			=> EE_REST_API_CLIENT_PATH . 'EE_Rest_Api_Client_Config.php',
 				),
 				'shortcode_paths' 	=> array( EE_REST_API_CLIENT_PATH . 'EES_Rest_Api_Client.shortcode.php' ),
 				// if plugin update engine is being used for auto-updates. not needed if PUE is not being used.

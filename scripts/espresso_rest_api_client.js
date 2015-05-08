@@ -16,7 +16,8 @@ myapp.controller( 'mycontroller', ['$scope', '$http', function( $scope, $http ) 
 		method: 'GET',
 		url: $scope.api,
 		params: {
-			'filter[limit]' : 10
+			'filter[limit]' : 5,
+			'include' : 'Datetime.*'
 		}
 	}).
 	success( function( data, status, headers, config ) {
