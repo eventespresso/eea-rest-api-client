@@ -51,17 +51,6 @@ class EES_Rest_Api_Client  extends EES_Shortcode {
 
 
 	/**
-	 * 	set_definitions
-	 *
-	 *  @access 	public
-	 *  @return 	void
-	 */
-	public static function set_definitions() {
-	}
-
-
-
-	/**
 	 * 	run - initial shortcode module setup called during "wp_loaded" hook
 	 * 	this method is primarily used for loading resources that will be required by the shortcode when it is actually processed
 	 *
