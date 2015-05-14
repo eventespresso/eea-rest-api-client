@@ -3,7 +3,7 @@
 	<div ng-controller="mycontroller">
 		<article ng-repeat="event in events">
 			<h3>Event Name: {{ event.EVT_name }}</h3>
-			<p>Description: {{ event.EVT_desc }}</p>
+			<p ng-bind-html="event.EVT_desc"></p>
 			<h4>Datetimes:</h4>
 			<ul>
 				<li ng-repeat="datetime in event.datetimes">
