@@ -1,5 +1,10 @@
 var myapp = angular.module( 'myapp', [] );
 
+myapp.filter("sanitize", ['$sce', function($sce) {
+  return function(htmlCode){
+    return $sce.trustAsHtml(htmlCode);
+  }
+}]);
 // Set the configuration
 myapp.run( ['$rootScope', function($rootScope) {
 
@@ -30,3 +35,4 @@ myapp.controller( 'mycontroller', ['$scope', '$http', function( $scope, $http ) 
 	});
 
 }]);
+
