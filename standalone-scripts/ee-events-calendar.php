@@ -96,5 +96,7 @@
 <div id='loading' style='display:none'>loading...</div>
 <div id='calendar'></div>
 <p>This page is using the Event Espresso API</p>
+
+<p>If you are making a request from a different domain, you will probably need to <a href='https://github.com/thenbrent/WP-API-CORS/blob/master/wp-api-cors.php'>install and activate the WP API CORS addon</a>, which is however currently in BETA.</p>
 </body>
 </html>
