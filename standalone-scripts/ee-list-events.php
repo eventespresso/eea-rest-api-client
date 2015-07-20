@@ -16,6 +16,7 @@ $count = count( $events ); //counting the number of results
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>EE4 JSON REST API - Upcoming Events</title>
+<p>As fetched from <a href='<?php echo $data_url;?>'><?php echo $data_url;?></a></p>
 </head>
 
 <body>
