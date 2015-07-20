@@ -28,7 +28,7 @@
 						"include": 'Datetime.*'
 					};
 				$.ajax({
-					url: 'http://dev2.eventespresso.com/wp-json/ee/v4.6/events',
+					url: 'http://demoee.org/demo/wp-json/ee/v4.6/events',
 					dataType: 'json',
 //					crossDomain:true,
 //					mimeType:'json',
