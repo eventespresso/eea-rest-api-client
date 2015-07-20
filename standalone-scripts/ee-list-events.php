@@ -26,7 +26,7 @@ $count = count( $events ); //counting the number of results
 if ($count > 0){
 	foreach ($events as $event){
 		echo '<div class="event">';
-		echo $event['featured_image_url'] ? '<a href="' . esc_attr( $event['link'] ). '"><img src="' . esc_attr( $event['featured_image_url'] ) . '" /></a>' : '';
+		echo $event['featured_image_url'] ? '<a href="' . htmlspecialchars( $event['link'] ). '"><img src="' . htmlspecialchars( $event['featured_image_url'] ) . '" /></a>' : '';
 		echo '<a href="' . $event[ 'link' ] . '">' . $event[ 'EVT_name' ] . '</a><ul>';
 		foreach( $event[ 'datetimes' ] as $datetime ) {
 			echo '<li>' . date( 'l jS \of F Y @h:i A',strtotime( $event[ 'datetimes' ][ 0 ][ 'DTT_EVT_start' ] ) ).'</a>';
