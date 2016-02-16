@@ -65,7 +65,7 @@ class EES_Rest_Api_Client  extends EES_Shortcode {
 		// Variables for app script
 		wp_localize_script( 'espresso_rest_api_client', 'espresso_rest_api_client_data',
 			array(
-				'api_endpoint' => get_bloginfo( 'wpurl' ) . '/wp-json/',
+				'api_endpoint' => get_bloginfo( 'wpurl' ) . '/wp-json-old/',
 			)
 		);
 	}

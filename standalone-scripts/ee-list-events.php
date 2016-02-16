@@ -5,7 +5,7 @@
 $curdate_utc = date("Y-m-d H:i:s");
 
 //Retrieve the upcoming events and their related datetimes
-$data_url = "http://demoee.org/demo/wp-json/ee/v4.6/events?include=Datetime&filter[where][Datetime.DTT_EVT_end][]=>&filter[where][Datetime.DTT_EVT_end][]=" . urlencode($curdate_utc);
+$data_url = "http://demoee.org/demo/wp-json-old/ee/v4.6/events?include=Datetime&filter[where][Datetime.DTT_EVT_end][]=>&filter[where][Datetime.DTT_EVT_end][]=" . urlencode($curdate_utc);
 
 $json = file_get_contents($data_url, true); //getting the file content
 $events = json_decode($json, true); //getting the file content as array

@@ -2,7 +2,8 @@
 /*
   Plugin Name: Event Espresso - Rest Api Client (EE4.6.25)
   Plugin URI: http://www.eventespresso.com
-  Description: The Event Espresso Rest Api Client adds a shortcode that uses the EE4 JSON REST API. Compatible with Event Espresso 4.6.25 or higher. Just add the shortcode [REST_API_CLIENT] and it will list events using angular.js
+  Description: The Event Espresso Rest Api Client adds a shortcode that uses the EE4 JSON REST API. Compatible with Event Espresso 4.6.25 or higher. Just add the shortcode [REST_API_CLIENT] and it will list events using angular.js.
+ * Also requires the WP API v1 renamer now, located here: https://github.com/eventespresso/wp-api-v1-renamer
   Version: 1.0.0.dev.000
   Author: Event Espresso
   Author URI: http://www.eventespresso.com
