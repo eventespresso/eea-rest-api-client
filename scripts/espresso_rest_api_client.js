@@ -9,7 +9,7 @@ myapp.filter("sanitize", ['$sce', function($sce) {
 myapp.run( ['$rootScope', function($rootScope) {
 
 	// Variables defined by wp_localize_script
-	$rootScope.api = espresso_rest_api_client_data.api_endpoint + 'ee/v4.6/events';
+	$rootScope.api = espresso_rest_api_client_data.api_endpoint + 'ee/v4.8.29/events';
 
 }]);
 

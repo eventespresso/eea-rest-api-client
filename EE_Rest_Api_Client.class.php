@@ -30,7 +30,7 @@ Class  EE_Rest_Api_Client extends EE_Addon {
 			'Rest_Api_Client',
 			array(
 				'version' 					=> EE_REST_API_CLIENT_VERSION,
-				'min_core_version' => '4.6.26.dev.000',
+				'min_core_version' => '4.8.29.dev.000',
 				'main_file_path' 				=> EE_REST_API_CLIENT_PLUGIN_FILE,
 				'autoloader_paths' => array(
 					'EE_Rest_Api_Client' 						=> EE_REST_API_CLIENT_PATH . 'EE_Rest_Api_Client.class.php',
