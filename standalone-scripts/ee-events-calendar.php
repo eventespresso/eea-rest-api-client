@@ -17,10 +17,10 @@
 				var objectdata = {
                         where: {
                             'Datetime.DTT_EVT_end': [
-                                '>', start.format() + '00:00:00'
+                                '>', start.format() + 'T00:00:00'
                             ],
                             'Datetime.DTT_EVT_start': [
-                                '<', end.format() + '00:00:00'
+                                '<', end.format() + 'T00:00:00'
                             ]
                         },
 						"include": 'Datetime.*'
