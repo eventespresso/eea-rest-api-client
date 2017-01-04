@@ -15,20 +15,18 @@
 		$('#calendar').fullCalendar({
 			events: function( start, end, timezone, callback ){
 				var objectdata = {
-						filter:{
-							where:{
-								'Datetime.DTT_EVT_end':[
-									'>',start.format()
-								],
-								'Datetime.DTT_EVT_start':[
-									'<', end.format()
-								]
-							}
-						},
+                        where: {
+                            'Datetime.DTT_EVT_end': [
+                                '>', start.format()
+                            ],
+                            'Datetime.DTT_EVT_start': [
+                                '<', end.format()
+                            ]
+                        },
 						"include": 'Datetime.*'
 					};
 				$.ajax({
-					url: 'http://demoee.org/demo/wp-json/ee/v4.8.29/events',
+					url: 'http://demoee.org/use-cases/wp-json/ee/v4.8.29/events',
 					dataType: 'json',
 //					crossDomain:true,
 //					mimeType:'json',
