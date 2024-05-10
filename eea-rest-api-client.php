@@ -1,4 +1,5 @@
 <?php
+
 /*
   Plugin Name: Event Espresso - Rest Api Client (EE4.6.25)
   Plugin URI: http://www.eventespresso.com
@@ -36,16 +37,17 @@
  *
  * ------------------------------------------------------------------------
  */
-define( 'EE_REST_API_CLIENT_VERSION', '1.0.0.dev.000' );
-define( 'EE_REST_API_CLIENT_PLUGIN_FILE',  __FILE__ );
-function load_espresso_rest_api_client() {
-if ( class_exists( 'EE_Addon' )) {
-	// rest_api_client version
-	require_once ( plugin_dir_path( __FILE__ ) . 'EE_Rest_Api_Client.class.php' );
-	EE_Rest_Api_Client::register_addon();
+define('EE_REST_API_CLIENT_VERSION', '1.0.0.dev.000');
+define('EE_REST_API_CLIENT_PLUGIN_FILE', __FILE__);
+function load_espresso_rest_api_client()
+{
+    if (class_exists('EE_Addon')) {
+        // rest_api_client version
+        require_once(plugin_dir_path(__FILE__) . 'EE_Rest_Api_Client.class.php');
+        EE_Rest_Api_Client::register_addon();
+    }
 }
-}
-add_action( 'AHEE__EE_System__load_espresso_addons', 'load_espresso_rest_api_client' );
+add_action('AHEE__EE_System__load_espresso_addons', 'load_espresso_rest_api_client');
 
 // End of file espresso_rest_api_client.php
 // Location: wp-content/plugins/eea-rest-api-client/espresso_rest_api_client.php
